@@ -7,7 +7,7 @@ var message;
     if(login == 'Админ'){
         var password = prompt('Password. \nВведите пароль(каждое слово должно начинатся с заглавной буквы)', '');
         message = CheckPassword(password);
-    }else if(login  == undefined || login == null){
+    }else if(login  === undefined || login === null){
         message = 'Вход отменён'
     }else{
         message = 'Я вас не знаю! \nТы кто такой???? Давай, до свидания!'
@@ -16,7 +16,7 @@ var message;
 })()
 
 function CheckPassword(password){
-    if(password  == undefined || login == null){
+    if(password  === undefined || login === null){
         message = 'Вход отменён'
     } else if(password == 'Черный Властелин'){
         message = 'У тебя получилось!!!! \nДобро пожаловать, Черный Властелин!'

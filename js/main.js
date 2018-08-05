@@ -10,7 +10,7 @@ var message;
     }else if(login  === undefined || login === null){
         message = 'Вход отменён'
     }else{
-        message = 'Я вас не знаю! \nТы кто такой???? Давай, до свидания!'
+        message = 'Я вас не знаю!'
     }
     alert(message);
 })()
@@ -19,9 +19,10 @@ function CheckPassword(password){
     if(password  === undefined || login === null){
         message = 'Вход отменён'
     } else if(password == 'Черный Властелин'){
-        message = 'У тебя получилось!!!! \nДобро пожаловать, Черный Властелин!'
+        message = 'Добро пожаловать!'
     }else{
-        message = 'Пароль неверен!:-((( \nПопробуйте еще раз.'
+        message = 'Пароль неверен!'
     }
     return message;
 }
+
